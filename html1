@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+        }
+
+
+        /* Right side - Instagram login */
+        .right-side {
+            width: 350px;
+            background-color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-side img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .right-side input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .right-side button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3897f0;
+            color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .right-side button:hover {
+            background-color: #2b78e4;
+        }
+
+        .right-side .signup-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .right-side .signup-link a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #999;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- Right Side: Instagram Login -->
+        <div class="right-side">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Logo">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Log In</button>
+            <div class="signup-link">
+                <span>Don't have an account? </span>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
