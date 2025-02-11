@@ -1,0 +1,121 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header .nav-icons img {
+    width: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.profile {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-header .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-header .profile-info {
+    flex: 1;
+}
+
+.profile-header .profile-info h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.profile-header .profile-stats {
+    font-size: 1em;
+    color: #8e8e8e;
+    margin-bottom: 10px;
+}
+
+.profile-header .profile-stats span {
+    margin-right: 20px;
+}
+
+.profile-header .profile-bio p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.profile-header .profile-bio a {
+    color: #0095f6;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.profile-header .edit-profile {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-header .edit-profile:hover {
+    background-color: #007bb5;
+}
+
+/* Post Grid Section */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .post-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+}
